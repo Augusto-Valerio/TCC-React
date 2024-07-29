@@ -1,12 +1,20 @@
-import Home from './components/Home'
-import Projeto from './components/Projeto'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Projeto from './components/Projeto';
+import NavBar from './components/NavBar';
 
-export default function App() {
+const App = () => {
   return (
-    <div>
+    <Router>
+      <NavBar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projeto" element={<Projeto />} />
+        </Routes>
+      </main>
+    </Router>
+  );
+};
 
-      <Home />
-      
-    </div>
-  )
-}
+export default App;
