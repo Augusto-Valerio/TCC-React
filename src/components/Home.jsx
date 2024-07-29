@@ -10,11 +10,11 @@ export default function Home() {
     
       
     
-    <div className="font-body bg-body">  
+    <div className="font-inter bg-body">  
       <nav className="bg-navbar-footer flex justify-between items-center w-full h-16">
         <img className="ml-12" src= {Sensor} alt="Logo" />
         <ul className="text-texto flex list-none gap-20 mx-auto"> 
-          <li><a className="hover:font-bold" href="#">PROJETO</a></li>
+          <li><a className="hover:font-bold" href="Projeto">PROJETO</a></li>
           <li><a className="hover:font-bold" href="#">TECNOLOGIA</a></li>
           <li><a className="hover:font-bold" href="#">REFERÊNCIAS BIBLIOGRÁFICAS</a></li>
           <li><a className="hover:font-bold" href="#">SOBRE NÓS</a></li> 
@@ -25,7 +25,7 @@ export default function Home() {
       <div className="flex justify-center items-center ">
         <main className="flex flex-col items-center">
         <section className="text-texto flex flex-col items-center w-4/5 h-[741px] mt-8" >
-            <h1 className="font-titulo font-bold text-titulo mt-16 mb-8 text-4xl leading-10 text-center">
+            <h1 className="font-poppins font-bold text-titulo mt-16 mb-8 text-4xl leading-10 text-center">
               Bem-vindo ao Projeto <br /> <span className="text-titulo2" >Cubo Multissensorial</span>
             </h1>
 

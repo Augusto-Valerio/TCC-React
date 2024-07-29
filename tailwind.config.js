@@ -14,8 +14,8 @@ export default {
       'rounded' : '#28272C',
     },
     fontFamily: {
-      'body': '"Inter"',
-      'titulo': '"Poppins"',
+      'inter': '"Inter"',
+      'poppins': '"Poppins"',
       
       
     }
