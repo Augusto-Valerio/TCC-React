@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import Sensor from '../assets/Sensor.svg';
+import unasp from '../assets/unasp.svg';
 
 const NavBar = () => {
   const location = useLocation();
@@ -9,26 +10,31 @@ const NavBar = () => {
       <Link to="/">
         <img src={Sensor} alt="Logo" className="ml-12" />
       </Link>
+
+      
       
       <ul className="text-texto flex list-none gap-20 mx-auto ">
 
         <li>
-          <Link to="/projeto" className={`hover:font-bold hover:underline ${location.pathname === '/projeto' ? 'text-navSelect underline' : ''}`} >PROJETO</Link>
+          <Link to="/projeto" className={` hover:text-titulo2 hover:underline  ${location.pathname === '/projeto' ? 'text-navSelect underline' : ''}`} >PROJETO</Link>
         </li>
 
         <li>
-          <Link to="/" className="hover:font-bold hover:underline">TECNOLOGIA</Link>
+        <Link to="/tecnologia" className={`hover:text-titulo2 hover:underline  ${location.pathname === '/tecnologia' ? 'text-navSelect underline' : ''}`} >TECNOLOGIA</Link>
         </li>
 
         <li>
-          <Link to="/" className="hover:font-bold hover:underline">REFERÊNCIAS BIBLIOGRÁFICAS</Link>
+        <Link to="/referencias" className={`hover:text-titulo2 hover:underline  ${location.pathname === '/referencias' ? 'text-navSelect underline' : ''}`} >REFERÊNCIAS BIBLIOGRÁFICAS</Link>      
         </li>
 
         <li>
-          <Link to="/" className="hover:font-bold hover:underline mr-28">SOBRE NÓS</Link>
+        <Link to="/sobre" className={`hover:text-titulo2 hover:underline  mr-6 ${location.pathname === '/sobre' ? 'text-navSelect underline' : ''}`} >SOBRE NÓS</Link>  
         </li>
+
 
       </ul>
+
+      <img className='mr-12' src={unasp} alt="Logo UNASP" />
     </nav>
   );
 };

@@ -12,7 +12,9 @@ export default {
       'titulo' : '#E6E1E1',
       'titulo2' : '#505058',
       'rounded' : '#28272C',
-      'navSelect' : '#8257E6'
+      'navSelect' : '#8257E6',
+      'faleConosco' : '#343437',
+
     },
     fontFamily: {
       'inter': '"Inter"',
