@@ -2,56 +2,97 @@ import imagens from '../assets/imagens.png';
 import gmail from '../assets/gmail.svg';
 import instagram from '../assets/instagram.svg';
 import whatsapp from '../assets/whatsapp.svg';
-
+import linkedin from '../assets/linkedin.svg';
+import insta2 from '../assets/insta2.svg';
+import Gomes from '../assets/Gomes.png';
+import Jonas from '../assets/Jonas.png';
+import Valerio from '../assets/Valerio.png';
+import Ramalho from '../assets/Ramalho.png';
 
 export default function Home() {
   return (
-     
-    <div className="font-body bg-body">  
+    <div className="font-body bg-body">
       <div className="flex justify-center items-center min-h-screen ">
         <main className="">
-        <section className="flex items-start space-x-8" >
-            
 
-            <img className=' h-80 w-auto mt-20 mb-28 ml-20 mr-32' src={imagens} alt="imagens do projeto da home" />
+          <h1 className="font-poppins font-bold text-titulo mb-8 mt-28 text-5xl leading-10 text-center">
+            Sobre nós
+          </h1>
 
-            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-1/2 px-4 pt-5 pb-11  text-texto mt-20 font-inter ">
-            <span className='font-bold font-poppins'>Objetivo do Projeto:</span> <br /> <br /> O Cubo Multisensorial tem como objetivo <br />oferecer um recurso inovador para a terapia de <br /> pessoas com transtornos mentais. Através de <br /> estímulos visuais, auditivos e táteis, o cubo <br /> busca promover o desenvolvimento cognitivo,<br /> emocional e social dos usuários, contribuindo <br /> para o seu bem-estar e qualidade de vida.
+          <section className="flex justify-center items-center space-x-8">
+          <div className="flex flex-col items-center space-y-4">
+            <img className="h-80 w-auto mt-20" src={Ramalho} alt="imagens do projeto da home" />
+            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>João Vitor Ramalho</h2>
+            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
+              <div className="flex items-center justify-center space-x-2">
+                <img  src={linkedin} alt="logo linkedin" />
+                <span>João Vitor </span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 mt-2">
+                <img src={insta2} alt="logo instagram" />
+                <span>@jv_ramalho_</span>
+              </div>
             </p>
-          </section>
+          </div>
 
 
-        <section className="flex items-start space-x-8" >
-            
-
-            <img className=' h-80 w-auto  mb-28 ml-20 mr-32' src={imagens} alt="imagens do projeto da home" />
-
-            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-1/2 px-4 pt-5 pb-4  text-texto font-inter ">
-            <span className='font-bold font-poppins'>Importância do Brinquedo Multissensorial:</span> <br /> <br /> Brinquedos multissensoriais são ferramentas <br /> valiosas na terapia de indivíduos com <br /> transtornos mentais, pois estimulam diferentes <br /> sentidos simultaneamente. Essa abordagem <br /> pode ajudar a melhorar a concentração, a <br /> comunicação e as habilidades motoras, além <br /> de proporcionar momentos de relaxamento e <br />diversão.
+          <div className="flex flex-col items-center space-y-4">
+            <img className="h-80 w-auto mt-20" src={Valerio} alt="imagens do projeto da home" />
+            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>Augusto Valerio</h2>
+            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
+              <div className="flex items-center justify-center space-x-2">
+                <img src={linkedin} alt="logo linkedin" />
+                <span>Augusto Valerio</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 mt-2">
+                <img src={insta2} alt="logo instagram" />
+                <span>@a.valerioo_</span>
+              </div>
             </p>
+          </div>
+
+
+          <div className="flex flex-col items-center space-y-4">
+            <img className="h-80 w-auto mt-20" src={Gomes} alt="imagens do projeto da home" />
+            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>Guilherme Gomes</h2>
+            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
+              <div className="flex items-center justify-center space-x-2">
+                <img src={linkedin} alt="logo linkedin" />
+                <span>Guilherme Santos Gomes</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 mt-2">
+                <img src={insta2} alt="logo instagram" />
+                <span>@_gomsxz.77</span>
+              </div>
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center space-y-4">
+            <img className="h-80 w-auto mt-20" src={Jonas} alt="imagens do projeto da home" />
+            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>Jonas Esteves</h2>
+            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
+              <div className="flex items-center justify-center space-x-2">
+                <img src={linkedin} alt="logo linkedin" />
+                <span>Jonas Esteves</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 mt-2">
+                <img src={insta2} alt="logo instagram" />
+                <span>@manojonas._</span>
+              </div>
+            </p>
+          </div>
+
           </section>
-
-          
-
-
         </main>
       </div>
-      
 
+      <footer className="flex items-center justify-center text-texto w-full h-24 bg-navbar-footer mt-16 gap-8 font-inter">
+        <p>Fale conosco:</p>
 
-      <footer className="flex items-center justify-center text-texto w-full h-24 bg-navbar-footer mt-16 gap-8 font-inter " /* #DCDCE1 texto do footer.*/  /* #1A1A1E cor de fundo do footer */>
-        <p>
-          Fale conosco: 
-        </p>
-
-        
         <a href="#"><img className="h-4 w-auto" src={gmail} alt="gmail logo" /></a>
-
-        <a href="#"><img className="h-4 w-auto" src={whatsapp} alt="gmail logo" /></a>
-
-        <a href="#"><img className="h-4 w-auto" src={instagram} alt="instagram logo"/></a>
+        <a href="#"><img className="h-4 w-auto" src={whatsapp} alt="whatsapp logo" /></a>
+        <a href="#"><img className="h-4 w-auto" src={instagram} alt="instagram logo" /></a>
       </footer>
     </div>
   );
 }
-

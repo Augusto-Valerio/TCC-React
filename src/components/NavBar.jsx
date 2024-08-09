@@ -6,7 +6,7 @@ const NavBar = () => {
   const location = useLocation();
 
   return (
-    <nav className="bg-navbar-footer flex justify-between items-center w-full h-16 font-inter">
+    <nav className="bg-navbar-footer flex justify-between items-center w-full h-16 font-inter fixed">
       <Link to="/">
         <img src={Sensor} alt="Logo" className="ml-12" />
       </Link>

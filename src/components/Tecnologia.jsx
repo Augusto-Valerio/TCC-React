@@ -9,10 +9,10 @@ export default function Home() {
       <div className="flex justify-center items-center min-h-screen">
         <main className="">
           <section className="flex items-start space-x-8">
-            <img className="h-80 w-auto mt-20 mb-28 ml-20 mr-32" src={imagens} alt="imagens do projeto da home" />
+            <img className="h-80 w-auto mt-36 mb-28 ml-20 mr-32" src={imagens} alt="imagens do projeto da home" />
 
             <div className="">
-              <h2 className="text-titulo text-4xl text-center px-4 pt-5 mt-12 font-poppins ml-36">Tecnologia Usada</h2>
+              <h2 className="text-titulo text-4xl text-center px-4 pt-5 mt-28 font-poppins ml-36">Tecnologia Usada</h2>
 
               <p className="text-center text-xl border border-rounded rounded-lg px-4 pt-6 pb-6 text-texto mt-8 ml-36 font-inter">
                 O Arduino é uma plataforma de prototipagem eletrônica <br /> de código aberto, baseada em hardware e software <br /> 

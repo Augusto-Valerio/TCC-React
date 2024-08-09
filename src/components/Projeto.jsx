@@ -13,9 +13,9 @@ export default function Home() {
         <section className="flex items-start space-x-8" >
             
 
-            <img className=' h-80 w-auto mt-20 mb-28 ml-20 mr-32' src={imagens} alt="imagens do projeto da home" />
+            <img className=' h-80 w-auto mt-28 mb-28 ml-20 mr-32' src={imagens} alt="imagens do projeto da home" />
 
-            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-1/2 px-4 pt-5 pb-11  text-texto mt-20 font-inter ">
+            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-1/2 px-4 pt-5 pb-11  text-texto mt-28 font-inter ">
             <span className='font-bold font-poppins'>Objetivo do Projeto:</span> <br /> <br /> O Cubo Multisensorial tem como objetivo <br />oferecer um recurso inovador para a terapia de <br /> pessoas com transtornos mentais. Através de <br /> estímulos visuais, auditivos e táteis, o cubo <br /> busca promover o desenvolvimento cognitivo,<br /> emocional e social dos usuários, contribuindo <br /> para o seu bem-estar e qualidade de vida.
             </p>
           </section>
