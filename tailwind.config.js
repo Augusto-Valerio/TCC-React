@@ -14,6 +14,7 @@ export default {
       'rounded' : '#28272C',
       'navSelect' : '#8257E6',
       'faleConosco' : '#343437',
+      
 
     },
     fontFamily: {
@@ -26,4 +27,7 @@ export default {
   },
   plugins: [],
 }
+
+
+
 

@@ -5,9 +5,12 @@ import NavBar from './components/NavBar';
 import Tecnologia from './components/Tecnologia'
 import Referencias from './components/Referencias'
 import Sobre from './components/Sobre'
+import './style.css';
 
 const App = () => {
   return (
+
+    
     <Router>
       <NavBar />
       <main>
@@ -17,6 +20,7 @@ const App = () => {
           <Route path='/tecnologia' element={<Tecnologia />} />
           <Route path='/referencias' element={<Referencias />} />
           <Route path='/sobre' element={<Sobre />} />
+          
         </Routes>
       </main>
     </Router>

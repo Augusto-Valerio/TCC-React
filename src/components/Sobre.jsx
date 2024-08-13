@@ -9,89 +9,88 @@ import Jonas from '../assets/Jonas.png';
 import Valerio from '../assets/Valerio.png';
 import Ramalho from '../assets/Ramalho.png';
 
-export default function Home() {
+export default function Sobre() {
   return (
     <div className="font-body bg-body">
-      <div className="flex justify-center items-center min-h-screen ">
-        <main className="">
+      <div className="flex justify-center items-center min-h-screen px-4">
+        <main className="w-full sm:mb-36">
 
-          <h1 className="font-poppins font-bold text-titulo mb-8 mt-28 text-5xl leading-10 text-center">
+          <h1 className="font-poppins font-bold text-titulo mb-8 mt-20 text-3xl leading-tight text-center sm:text-5xl sm:mb-52 ">
             Sobre nós
           </h1>
 
-          <section className="flex justify-center items-center space-x-8">
-          <div className="flex flex-col items-center space-y-4">
-            <img className="h-80 w-auto mt-20" src={Ramalho} alt="imagens do projeto da home" />
-            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>João Vitor Ramalho</h2>
-            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
-              <div className="flex items-center justify-center space-x-2">
-                <img  src={linkedin} alt="logo linkedin" />
-                <span>João Vitor </span>
-              </div>
-              <div className="flex items-center justify-center space-x-2 mt-2">
-                <img src={insta2} alt="logo instagram" />
-                <span>@jv_ramalho_</span>
-              </div>
-            </p>
-          </div>
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex flex-col items-center space-y-4">
+              <img className=" h-auto sm:w-7/12" src={Ramalho} alt="João Vitor Ramalho" />
+              <h2 className='font-poppins text-titulo mb-4 text-2xl sm:text-3xl text-center'>João Vitor Ramalho</h2>
+              <p className="text-center text-base leading-7 border border-rounded rounded-lg w-60 px-4 pt-5 pb-8 text-texto font-inter sm:leading-12 sm:text-xl sm:w-72">
+                <div className="flex items-center  space-x-2 ml-8">
+                  <img className="h-5 w-auto" src={linkedin} alt="linkedin logo" />
+                  <span>João Vitor</span>
+                </div>
+                <div className="flex items-center  space-x-2 mt-2 ml-8 ">
+                  <img className="h-5 w-auto" src={insta2} alt="instagram logo" />
+                  <span>@jv_ramalho_</span>
+                </div>
+              </p>
+            </div>
 
+            <div className="flex flex-col items-center space-y-4">
+              <img className=" h-auto sm:w-7/12" src={Valerio} alt="Augusto Valerio" />
+              <h2 className='font-poppins text-titulo mb-4 text-2xl sm:text-3xl text-center'>Augusto Valerio</h2>
+              <p className="text-center text-base  leading-7 border border-rounded rounded-lg w-60 px-4 pt-5 pb-8 text-texto font-inter sm:leading-12 sm:text-xl sm:w-72" >
+                <div className="flex items-center ml-8 space-x-2">
+                   <img className="h-5 w-auto" src={linkedin} alt="linkedin logo" />
+                  <span>Augusto Valerio</span>
+                </div>
+                <div className="flex items-center ml-8 space-x-2 mt-2 ">
+                  <img className="h-5 w-auto" src={insta2} alt="instagram logo" />
+                  <span>@a.valerioo_</span>
+                </div>
+              </p>
+            </div>
 
-          <div className="flex flex-col items-center space-y-4">
-            <img className="h-80 w-auto mt-20" src={Valerio} alt="imagens do projeto da home" />
-            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>Augusto Valerio</h2>
-            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
-              <div className="flex items-center justify-center space-x-2">
-                <img src={linkedin} alt="logo linkedin" />
-                <span>Augusto Valerio</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2 mt-2">
-                <img src={insta2} alt="logo instagram" />
-                <span>@a.valerioo_</span>
-              </div>
-            </p>
-          </div>
+            <div className="flex flex-col items-center space-y-4">
+              <img className=" h-auto sm:w-7/12" src={Gomes} alt="Guilherme Gomes" />
+              <h2 className='font-poppins text-titulo mb-4 text-2xl text-center sm:text-3xl'>Guilherme Gomes</h2>
+              <p className="text-center text-base  leading-7 border border-rounded rounded-lg w-60 px-4 pt-5 pb-8 text-texto font-inter sm:leading-12 sm:text-xl sm:w-72">
+                <div className="flex items-center ml-8 space-x-2">
+                   <img className="h-5 w-auto" src={linkedin} alt="linkedin logo" />
+                  <span>Guilherme Gomes</span>
+                </div>
+                <div className="flex items-center ml-8 space-x-2 mt-2 ">
+                  <img className="h-5 w-auto" src={insta2} alt="instagram logo" />
+                  <span>@_gomsxz.77</span>
+                </div>
+              </p>
+            </div>
 
-
-          <div className="flex flex-col items-center space-y-4">
-            <img className="h-80 w-auto mt-20" src={Gomes} alt="imagens do projeto da home" />
-            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>Guilherme Gomes</h2>
-            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
-              <div className="flex items-center justify-center space-x-2">
-                <img src={linkedin} alt="logo linkedin" />
-                <span>Guilherme Santos Gomes</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2 mt-2">
-                <img src={insta2} alt="logo instagram" />
-                <span>@_gomsxz.77</span>
-              </div>
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center space-y-4">
-            <img className="h-80 w-auto mt-20" src={Jonas} alt="imagens do projeto da home" />
-            <h2 className='font-poppins  text-titulo mb-8 mt-28 text-3xl leading-10 text-center'>Jonas Esteves</h2>
-            <p className="text-center text-xl leading-12 border border-rounded rounded-lg w-full px-4 pt-5 pb-11 text-texto font-inter">
-              <div className="flex items-center justify-center space-x-2">
-                <img src={linkedin} alt="logo linkedin" />
-                <span>Jonas Esteves</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2 mt-2">
-                <img src={insta2} alt="logo instagram" />
-                <span>@manojonas._</span>
-              </div>
-            </p>
-          </div>
-
+            <div className="flex flex-col items-center space-y-4">
+              <img className=" h-auto sm:w-7/12" src={Jonas} alt="Jonas Esteves" />
+              <h2 className='font-poppins text-titulo mb-4 text-2xl sm:text-3xl text-center'>Jonas Esteves</h2>
+              <p className="text-center text-base leading-7 border border-rounded rounded-lg w-60 px-4 pt-5 pb-8 text-texto font-inter sm:leading-12 sm:text-xl sm:w-72">
+                <div className="flex items-center ml-8 space-x-2">
+                   <img className="h-5 w-auto" src={linkedin} alt="linkedin logo" />
+                  <span>Jonas Esteves</span>
+                </div>
+                <div className="flex items-center ml-8 space-x-2 mt-2 ">
+                  <img className="h-5 w-auto" src={insta2} alt="instagram logo" />
+                  <span>@manojonas._</span>
+                </div>
+              </p>
+            </div>
           </section>
         </main>
       </div>
 
-      <footer className="flex items-center justify-center text-texto w-full h-24 bg-navbar-footer mt-16 gap-8 font-inter">
-        <p>Fale conosco:</p>
+      <footer className="flex flex-col items-center justify-center text-texto w-full h-auto bg-navbar-footer mt-16 gap-4 p-4 font-inter sm:flex-row sm:gap-8 sm:h-24 ">
+        <p className="text-center sm:text-left">Fale conosco:</p>
 
-        <a href="#"><img className="h-4 w-auto" src={gmail} alt="gmail logo" /></a>
-        <a href="#"><img className="h-4 w-auto" src={whatsapp} alt="whatsapp logo" /></a>
-        <a href="#"><img className="h-4 w-auto" src={instagram} alt="instagram logo" /></a>
+        <div className="flex gap-4">
+          <a href="#"><img className="h-6 w-auto" src={gmail} alt="gmail logo" /></a>
+          <a href="#"><img className="h-6 w-auto" src={whatsapp} alt="whatsapp logo" /></a>
+          <a href="#"><img className="h-6 w-auto" src={instagram} alt="instagram logo" /></a>
+        </div>
       </footer>
     </div>
   );

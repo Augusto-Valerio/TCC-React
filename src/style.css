@@ -1,0 +1,21 @@
+/* styles.css */
+
+/* Customizando a scrollbar no desktop */
+::-webkit-scrollbar {
+  width: 6px; /* Largura da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #323238; /* Cor da "mão" da scrollbar */
+  border-radius: 10px; /* Bordas arredondadas da "mão" */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #4a4a4a; /* Cor mais clara quando pressionada */
+  }
+
+::-webkit-scrollbar-track {
+  background: #121214; /* Cor de fundo da área da scrollbar */
+}
+
+
