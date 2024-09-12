@@ -2,6 +2,7 @@ import imagens from '../assets/imagens.png';
 import gmail from '../assets/gmail.svg';
 import instagram from '../assets/instagram.svg';
 import whatsapp from '../assets/whatsapp.svg';
+import circuito from '../assets/circuito.jpg';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
               Bem-vindo ao Projeto <br /> <span className="text-titulo2">Cubo Multissensorial</span>
             </h1>
 
-            <img className="w-full sm:w-3/4 md:w-1/2" src={imagens} alt="imagens do projeto da home" />
+            <img className="w-full sm:w-3/4 md:w-1/2" src={circuito} alt="imagens do projeto da home" />
 
             <p className="text-center text-base leading-6 mt-8 border border-rounded rounded-lg w-full px-4 py-4 text-texto sm:text-lg md:text-xl sm:w-4/5 md:w-1/2">
               Nosso projeto, desenvolvido como Trabalho de Conclusão de Curso, é um brinquedo comunicador multisensorial em formato de cubo, criado para apoiar o desenvolvimento pessoal e ajudar pessoas com transtornos mentais. Utilizando a tecnologia Arduino, nosso cubo integra luzes, som e interações táteis para proporcionar uma experiência terapêutica e educativa.
@@ -29,9 +30,9 @@ export default function Home() {
         </p>
 
         <div className="flex gap-4">
-          <a href="#"><img className="h-6 w-auto" src={gmail} alt="gmail logo" /></a>
-          <a href="#"><img className="h-6 w-auto" src={whatsapp} alt="whatsapp logo" /></a>
-          <a href="#"><img className="h-6 w-auto" src={instagram} alt="instagram logo" /></a>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=tcc.sensor2024@gmail.com"><img className="h-6 w-auto" src={gmail} alt="gmail logo" /></a>
+          <a target="_blank" href="https://wa.me/5511974517730"><img className="h-6 w-auto" src={whatsapp} alt="whatsapp logo" /></a>
+          <a target="_blank" href="https://www.instagram.com/sensor_2024/"><img className="h-6 w-auto" src={instagram} alt="instagram logo" /></a>
         </div>
       </footer>
     </div>

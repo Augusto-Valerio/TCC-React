@@ -11,7 +11,7 @@ export default function Referencias() {
   return (
     <div className="font-body bg-body">
       <div className="flex justify-center items-center min-h-screen">
-        <main className="w-full px-4">
+        <main className="w-full px-4 sm:mt-8">
 
           <h1 className="font-poppins font-bold text-titulo mb-8 mt-20 text-3xl leading-tight text-center sm:text-4xl sm:mt-28">
             Referências bibliográficas
@@ -57,9 +57,9 @@ export default function Referencias() {
         <p className="text-center sm:text-left">Fale conosco:</p>
 
         <div className="flex gap-4">
-          <a href="#"><img className="h-6 w-auto" src={gmail} alt="gmail logo" /></a>
-          <a href="#"><img className="h-6 w-auto" src={whatsapp} alt="whatsapp logo" /></a>
-          <a href="#"><img className="h-6 w-auto" src={instagram} alt="instagram logo" /></a>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=tcc.sensor2024@gmail.com"><img className="h-6 w-auto" src={gmail} alt="gmail logo" /></a>
+          <a target="_blank" href="https://wa.me/5511974517730"><img className="h-6 w-auto" src={whatsapp} alt="whatsapp logo" /></a>
+          <a target="_blank" href="https://www.instagram.com/sensor_2024/"><img className="h-6 w-auto" src={instagram} alt="instagram logo" /></a>
         </div>
       </footer>
     </div>
