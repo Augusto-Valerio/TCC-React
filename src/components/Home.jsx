@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex justify-center items-center">
         <main className="flex flex-col items-center ">
           <section className="text-texto flex flex-col items-center w-[90%] h-auto mt-8">
-            <h1 className="font-poppins font-bold text-titulo mb-8 mt-20 text-3xl leading-tight text-center sm:text-4xl">
+            <h1 className="font-poppins font-bold text-titulo mb-8 mt-20 text-3xl leading-tight text-center sm:text-4xl sm:mt-28">
               Bem-vindo ao Projeto <br /> <span className="text-titulo2">Cubo Multissensorial</span>
             </h1>
 

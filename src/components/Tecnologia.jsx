@@ -72,7 +72,7 @@ export default function Tecnologia() {
         <main className="w-full">
 
           <section className="flex flex-col items-center space-y-8 md:space-y-0 md:space-x-8 md:flex-row">
-            <img className="w-full h-auto mt-24 md:mt-36 md:mb-28 md:h-80 md:w-auto" src={currentImage} alt="Imagens de Arduino" />
+            <img className="w-full h-auto mt-24 md:mt-36 md:mb-28 md:h-80 md:w-auto sm:ml-24" src={currentImage} alt="Imagens de Arduino" />
 
             <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left md:w-1/2 md:mt-36">
               <h2 className="text-titulo text-3xl px-4 py-6 font-poppins font-bold sm:text-4xl md:px-0 sm:ml-40 md:mt-10">
@@ -86,7 +86,7 @@ export default function Tecnologia() {
           </section>
 
           <section className="flex flex-col items-center mt-8 space-y-8 md:space-y-0 md:space-x-8 md:flex-row">
-            <img className="w-full h-auto mt-8 md:mt-20 md:mb-28 md:h-80 md:w-auto" src={currentSecondImage} alt="Imagens do projeto do cubo" />
+            <img className="w-full h-auto mt-8 md:mt-20 md:mb-28 md:h-80 md:w-auto sm:ml-24" src={currentSecondImage} alt="Imagens do projeto do cubo" />
 
             <div className="flex flex-col items-center md:items-start text-center md:text-left md:w-1/2">
               <h2 className="text-titulo text-3xl mb-2 px-4 pt-5 font-poppins font-bold md:mt-10 sm:text-4xl md:mb-12 md:text-center">
