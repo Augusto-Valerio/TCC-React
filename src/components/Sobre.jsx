@@ -6,7 +6,7 @@ import linkedin from '../assets/linkedin.svg';
 import insta2 from '../assets/insta2.svg';
 import Gomes from '../assets/Gomes.png';
 import Jonas from '../assets/Jonas.png';
-import Valerio from '../assets/Valerio.png';
+import Valerio from '../assets/Valerio.jpg';
 import Ramalho from '../assets/Ramalho.png';
 
 
@@ -85,7 +85,7 @@ export default function Sobre() {
         </main>
       </div>
 
-      <footer className="flex flex-col items-center justify-center text-texto w-full h-auto bg-navbar-footer mt-16 gap-4 p-4 font-inter sm:flex-row sm:gap-8 sm:h-24">
+      <footer className="flex flex-col items-center justify-center text-texto w-full h-auto bg-navbar-footer mt-16 gap-4 p-4 font-inter sm:flex-row sm:gap-8 sm:h-24 sm:mt-0">
         <p className="text-center sm:text-left">Fale conosco:</p>
 
         <div className="flex gap-4">

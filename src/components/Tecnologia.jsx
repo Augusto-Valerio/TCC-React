@@ -138,7 +138,7 @@ export default function Tecnologia() {
         </main>
       </div>
 
-      <footer className="flex flex-col items-center justify-center text-texto font-inter w-full h-auto bg-navbar-footer mt-16 gap-4 sm:gap-8 p-4 sm:flex-row sm:h-24">
+      <footer className="flex flex-col items-center justify-center text-texto font-inter w-full h-auto bg-navbar-footer mt-16 gap-4 sm:gap-8 p-4 sm:flex-row sm:h-24 sm:mt-10">
         <p className="text-center sm:text-left">Fale conosco:</p>
 
         <div className="flex gap-4">
