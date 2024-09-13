@@ -2,19 +2,23 @@ import { useState, useEffect } from 'react';
 import gmail from '../assets/gmail.svg';
 import instagram from '../assets/instagram.svg';
 import whatsapp from '../assets/whatsapp.svg';
-import setaDireita from '../assets/setaDireita.svg';
-import setaEsquerda from '../assets/setaEsquerda.svg';
 import arduino1 from '../assets/arduino1.png';
 import arduino2 from '../assets/arduino2.png';
 import leds from '../assets/leds.jpg';
 import ultrassonico from '../assets/ultrassonico.png';
 import bluetooth from '../assets/bluetooth.png';
 import buzzer from '../assets/buzzer.png';
+import setaEsquerda from '../assets/setaEsquerda.svg';
+import setaEsquerdaPreta from '../assets/setaEsquerdaPreta.svg';
+import setaDireita from '../assets/setaDireita.svg';
+import setaDireitaPreta from '../assets/setaDireitaPreta.svg';
 
 export default function Tecnologia() {
   const [currentImage, setCurrentImage] = useState(arduino1);
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [currentSecondImage, setCurrentSecondImage] = useState(leds);
+  const [leftArrow, setLeftArrow] = useState(setaEsquerdaPreta);
+  const [rightArrow, setRightArrow] = useState(setaDireita);
 
   const paragraphs = [
     {
@@ -56,13 +60,27 @@ export default function Tecnologia() {
 
   const handleNext = () => {
     if (currentParagraph < paragraphs.length - 1) {
-      setCurrentParagraph(currentParagraph + 1);
+      setCurrentParagraph(prev => {
+        const newIndex = prev + 1;
+        setLeftArrow(setaEsquerda);
+        if (newIndex === paragraphs.length - 1) {
+          setRightArrow(setaDireitaPreta);
+        }
+        return newIndex;
+      });
     }
   };
 
   const handlePrev = () => {
     if (currentParagraph > 0) {
-      setCurrentParagraph(currentParagraph - 1);
+      setCurrentParagraph(prev => {
+        const newIndex = prev - 1;
+        setRightArrow(setaDireita);
+        if (newIndex === 0) {
+          setLeftArrow(setaEsquerdaPreta);
+        }
+        return newIndex;
+      });
     }
   };
 
@@ -71,14 +89,14 @@ export default function Tecnologia() {
       <div className="w-full max-w-7xl px-4">
         <main className="w-full">
 
-          <section className="flex flex-col items-center space-y-8 md:space-y-0 md:space-x-8 md:flex-row">
+          <section className="flex flex-col items-center space-y-8 md:space-y-0 md:space-x-8 md:flex-row ">
             <img className="w-full h-auto mt-24 md:mt-36 md:mb-28 md:h-80 md:w-auto sm:ml-24" src={currentImage} alt="Imagens de Arduino" />
 
             <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left md:w-1/2 md:mt-36">
               <h2 className="text-titulo text-3xl px-4 py-6 font-poppins font-bold sm:text-4xl md:px-0 sm:ml-40 md:mt-10">
                 Tecnologia Usada
               </h2>
-              <p className="text-base border border-rounded rounded-lg px-4 py-6 mb-8 text-texto mt-8 font-inter max-w-4xl md:text-left sm:text-xl md:text-center md:mt-16">
+              <p className="text-base border border-rounded rounded-lg px-4 py-6 mb-8 text-texto mt-8 font-inter max-w-4xl md:text-left sm:text-xl md:text-center md:mt-0">
                 O Arduino é uma plataforma de prototipagem eletrônica de código aberto, baseada em hardware e software 
                 flexíveis e fáceis de usar. No nosso cubo, utilizamos o Arduino para controlar LEDs, alto-falantes e sensores, criando interações dinâmicas que respondem ao toque e ao som.
               </p>
@@ -93,13 +111,13 @@ export default function Tecnologia() {
                 Componentes do Cubo Multisensorial
               </h2>
               <div className="relative w-full">
-                <div className="flex justify-between items-center px-4 py-6 text-texto text-center font-inter max-w-4xl mx-auto text-base border border-rounded rounded-lg sm:text-xl sm:mb-24">
+                <div className="flex justify-between items-center px-4 py-6 text-texto text-center font-inter max-w-4xl mx-auto text-base border border-rounded rounded-lg sm:text-xl sm:mb-40">
                   <button
                     className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400 disabled:bg-gray-200"
                     onClick={handlePrev}
                     disabled={currentParagraph === 0}
                   >
-                    <img src={setaEsquerda} alt="Seta para a esquerda" className="h-6 w-6" />
+                    <img src={leftArrow} alt="Seta para a esquerda" className="h-6 w-6" />
                   </button>
                   <div className="mx-4 flex-1">
                     <span className="font-bold font-poppins">{paragraphs[currentParagraph].title}:</span> <br /><br />
@@ -110,7 +128,7 @@ export default function Tecnologia() {
                     onClick={handleNext}
                     disabled={currentParagraph === paragraphs.length - 1}
                   >
-                    <img src={setaDireita} alt="Seta para a direita" className="h-6 w-6" />
+                    <img src={rightArrow} alt="Seta para a direita" className="h-6 w-6" />
                   </button>
                 </div>
               </div>
