@@ -54,7 +54,7 @@ const NavBar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex text-texto list-none gap-20 mx-auto">
           <li>
-            <Link to="/projeto" className={`hover:text-titulo2 hover:underline ${location.pathname === '/projeto' ? 'text-navSelect underline' : ''}`}>PROJETO</Link>
+            <Link to="/projeto" className={`hover:text-titulo2 hover:underline ${location.pathname === '/projeto' ? 'text-navSelect underline' : ''}`}>GUIA</Link>
           </li>
           <li>
             <Link to="/tecnologia" className={`hover:text-titulo2 hover:underline ${location.pathname === '/tecnologia' ? 'text-navSelect underline' : ''}`}>TECNOLOGIA</Link>
@@ -81,7 +81,7 @@ const NavBar = () => {
         </div>
         <ul className="flex flex-col items-start space-y-4 mt-16 pl-4 font-inter">
           {[
-            { to: '/projeto', img: projeto, text: 'PROJETO' },
+            { to: '/projeto', img: projeto, text: 'GUIA' },
             { to: '/tecnologia', img: tecnologia, text: 'TECNOLOGIA' },
             { to: '/referencias', img: referencias, text: 'REFERÊNCIAS BIBLIOGRÁFICAS' },
             { to: '/sobre', img: sobre, text: 'SOBRE NÓS' },

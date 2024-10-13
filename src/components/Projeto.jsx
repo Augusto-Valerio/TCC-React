@@ -3,6 +3,8 @@ import gmail from '../assets/gmail.svg';
 import instagram from '../assets/instagram.svg';
 import whatsapp from '../assets/whatsapp.svg';
 import Objetivo from '../assets/Objetivo.jpg';
+import guia1 from '../assets/guia1.jpg';
+import guia2 from '../assets/guia2.jpg';
 
 export default function Projeto() {
   return (
@@ -10,21 +12,19 @@ export default function Projeto() {
       <main className="flex flex-col items-center space-y-16 w-full mt-24 sm:mt-2">
 
         <section className="flex flex-col items-center w-full px-4 sm:flex-row sm:items-center sm:justify-center sm:space-x-8 sm:mt-36">
-          <img className="w-full sm:w-auto sm:h-80" src={Objetivo} alt="imagens do projeto da home" />
+          <img className="w-full sm:w-auto sm:h-80" src={guia1} alt="imagens do projeto da home" />
 
           <p className="text-center text-base leading-7 border border-rounded rounded-lg w-full px-4 pt-5 pb-8 text-texto mt-8 font-inter sm:mt-0 sm:text-xl sm:leading-12 sm:w-3/12 md:px-2 md:py-8">
-            <span className="font-bold font-poppins">Objetivo do Projeto:</span> <br /> <br />
-            O Cubo Multisensorial tem como objetivo oferecer um recurso inovador para a terapia de pessoas com transtornos mentais. Através de estímulos visuais, auditivos e táteis, o cubo busca promover o desenvolvimento cognitivo, emocional e social dos usuários, contribuindo para o seu bem-estar e qualidade de vida.
-          </p>
+            <span className="font-bold font-poppins">Descrição Geral do Cubo Multissensorial: </span> <br /> <br />
+            O cubo possui 4 lados interativos: um jogo de encaixe com 4 peças e botões que acendem LEDs; Um lado com sensores ultrassônicos, onde o LED pisca e a pessoa deve passar a mão no sensor correspondente; Um jogo da memória com para acertar a sequência de luzes e sons; e um piano com botões que tocam as notas musicais e acendem LEDs.</p>
         </section>
 
         <section className="flex flex-col items-center w-full px-4 sm:flex-row sm:items-center sm:justify-center sm:space-x-8">
-          <img className="w-full sm:w-auto sm:h-80" src={Objetivo} alt="imagens do projeto da home" />
+          <img className="w-full sm:w-auto sm:h-80" src={guia2} alt="imagens do projeto da home" />
 
           <p className="text-center text-base leading-7 border border-rounded rounded-lg w-full px-4 pt-5 pb-8 text-texto mt-8 font-inter sm:mt-0 sm:text-xl sm:leading-12 sm:w-3/12 md:px-2 md:py-5">
-            <span className="font-bold font-poppins">Importância do Brinquedo Multissensorial:</span> <br /> <br />
-            Brinquedos multissensoriais são ferramentas valiosas na terapia de indivíduos com transtornos mentais, pois estimulam diferentes sentidos simultaneamente. Essa abordagem pode ajudar a melhorar a concentração, a comunicação e as habilidades motoras, além de proporcionar momentos de relaxamento e diversão.
-          </p>
+            <span className="font-bold font-poppins">Instruções de Uso:</span> <br /> <br />
+            No jogo de encaixe, coloque as peças nos lugares corretos e pressione o botão para acender o LED. No sensor de movimento, passe a mão sobre o sensor correspondente quando o LED piscar. No jogo da memória, memorize e repita a sequência de botões que piscam. No piano, pressione os botões para tocar as notas musicais e acender os LEDs.          </p>
         </section>
 
       </main>
