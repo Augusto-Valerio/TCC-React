@@ -66,7 +66,7 @@ export default function Projeto() {
             </button>
           </div>
 
-          <p className="text-center text-base leading-7 border border-rounded rounded-lg w-full px-4 pt-5 pb-8 text-texto mt-8 font-inter sm:mt-0 sm:text-xl sm:leading-12 sm:w-3/12 md:px-2 md:py-5 lg:ml-6">
+          <p className=" text-center text-base leading-7 border border-rounded rounded-lg w-full px-4 pt-5 pb-8 text-texto mt-8 font-inter sm:mt-0 sm:text-xl sm:leading-12 sm:w-3/12 md:px-2 md:py-5 lg:ml-6">
             <span className="font-bold font-poppins">Descrição Geral do Cubo Multissensorial: </span> <br /> <br />
             O cubo possui 4 lados interativos: um jogo de encaixe com 4 peças e botões que acendem LEDs; Um lado com sensores ultrassônicos, onde o LED pisca e a pessoa deve passar a mão no sensor correspondente; Um jogo da memória para acertar a sequência de luzes e sons; e um piano com botões que tocam as notas musicais e acendem LEDs.
           </p>

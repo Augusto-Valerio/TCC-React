@@ -4,6 +4,8 @@ import instagram from '../assets/instagram.svg';
 import whatsapp from '../assets/whatsapp.svg';
 import circuito from '../assets/circuito.jpg';
 
+
+
 export default function Home() {
   return (
     <div className="font-inter bg-body">  
